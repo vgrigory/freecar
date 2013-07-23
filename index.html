@@ -1,143 +1,198 @@
 <!DOCTYPE html>
-<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-    <meta charset="utf-8">
-    <title>Անվճար մեքենա</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="">
-    <meta name="author" content="">
+<html lang="en">
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <meta charset="utf-8">
+        <title>Անվճար մեքենա</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="">
+        <meta name="author" content="">
 
-    <link href="http://twitter.github.io/bootstrap/assets/css/bootstrap.css" rel="stylesheet">
-    <link href="css/style.css" rel="stylesheet">
-    <link href="http://twitter.github.io/bootstrap/assets/css/bootstrap-responsive.css" rel="stylesheet">
+        <link href="http://twitter.github.io/bootstrap/assets/css/bootstrap.css" rel="stylesheet">
+        <link href="css/smoothness/jquery-ui-1.10.3.custom.min.css" rel="stylesheet">
+        <link href="css/jquery.dataTables.css" rel="stylesheet">
+        <link href="css/dtable_jui.css" rel="stylesheet">
+<!--                <link href="css/demo_table.css" rel="stylesheet">-->
+        <link href="css/style.css" rel="stylesheet">
+        <link href="http://twitter.github.io/bootstrap/assets/css/bootstrap-responsive.css" rel="stylesheet">
 
-    <!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
-    <!--[if lt IE 9]>
-      <script src="../assets/js/html5shiv.js"></script>
-    <![endif]-->
+        <!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
+        <!--[if lt IE 9]>
+          <script src="../assets/js/html5shiv.js"></script>
+        <![endif]-->
 
-    <!-- Fav and touch icons -->
-    <!--<link rel="apple-touch-icon-precomposed" sizes="144x144" href="http://twitter.github.io/bootstrap/assets/ico/apple-touch-icon-144-precomposed.png">-->
-    <!--<link rel="apple-touch-icon-precomposed" sizes="114x114" href="http://twitter.github.io/bootstrap/assets/ico/apple-touch-icon-114-precomposed.png">-->
-      <!--<link rel="apple-touch-icon-precomposed" sizes="72x72" href="http://twitter.github.io/bootstrap/assets/ico/apple-touch-icon-72-precomposed.png">-->
-                    <!--<link rel="apple-touch-icon-precomposed" href="http://twitter.github.io/bootstrap/assets/ico/apple-touch-icon-57-precomposed.png">-->
-                                   <!--<link rel="shortcut icon" href="http://twitter.github.io/bootstrap/assets/ico/favicon.png">-->
-  </head>
+        <!-- Fav and touch icons -->
+        <!--<link rel="apple-touch-icon-precomposed" sizes="144x144" href="http://twitter.github.io/bootstrap/assets/ico/apple-touch-icon-144-precomposed.png">-->
+        <!--<link rel="apple-touch-icon-precomposed" sizes="114x114" href="http://twitter.github.io/bootstrap/assets/ico/apple-touch-icon-114-precomposed.png">-->
+        <!--<link rel="apple-touch-icon-precomposed" sizes="72x72" href="http://twitter.github.io/bootstrap/assets/ico/apple-touch-icon-72-precomposed.png">-->
+        <!--<link rel="apple-touch-icon-precomposed" href="http://twitter.github.io/bootstrap/assets/ico/apple-touch-icon-57-precomposed.png">-->
+        <!--<link rel="shortcut icon" href="http://twitter.github.io/bootstrap/assets/ico/favicon.png">-->
+    </head>
 
-  <body>
+    <body>
 
-    <div class="container-narrow">
+        <div class="container-narrow">
 
-      <div class="masthead">
-        <!--<ul class="nav nav-pills pull-right">-->
-          <!--<li class="active"><a href="http://twitter.github.io/bootstrap/examples/marketing-narrow.html#">Home</a></li>-->
-          <!--<li><a href="http://twitter.github.io/bootstrap/examples/marketing-narrow.html#">About</a></li>-->
-          <!--<li><a href="http://twitter.github.io/bootstrap/examples/marketing-narrow.html#">Contact</a></li>-->
-        <!--</ul>-->
-        <!--<h3 class="muted">Անվճար մեքենա</h3>-->
-          <center>
-            <img src="img/logo.jpg" />
-          </center>
-      </div>
+            <div class="masthead">
+                <!--<ul class="nav nav-pills pull-right">-->
+                <!--<li class="active"><a href="http://twitter.github.io/bootstrap/examples/marketing-narrow.html#">Home</a></li>-->
+                <!--<li><a href="http://twitter.github.io/bootstrap/examples/marketing-narrow.html#">About</a></li>-->
+                <!--<li><a href="http://twitter.github.io/bootstrap/examples/marketing-narrow.html#">Contact</a></li>-->
+                <!--</ul>-->
+                <!--<h3 class="muted">Անվճար մեքենա</h3>-->
+                <center>
+                    <img src="img/logo.jpg" />
+                </center>
+            </div>
 
-      <!--<hr>-->
+            <!--<hr>-->
 
-      <div class="jumbotron">
-        <h2>Անվճար մեքենա (carpooling)</h2>
-        <p class="lead">Կայքը նո՜ր - նո՜ր կյանքի է կոչվում</p>
-        <!--<a class="btn btn-large btn-success" href="http://twitter.github.io/bootstrap/examples/marketing-narrow.html#">Sign up today</a>-->
-      </div>
+            <div class="jumbotron">
+                <h2>Անվճար մեքենա (carpooling)</h2>
+                <p class="lead">Կայքը նո՜ր - նո՜ր կյանքի է կոչվում</p>
+                <!--<a class="btn btn-large btn-success" href="http://twitter.github.io/bootstrap/examples/marketing-narrow.html#">Sign up today</a>-->
+            </div>
 
-      <div class="row-fluid marketing">
-        <div class="span12">
-            <table class="table table-bordered">
-                <thead>
-                    <tr>
-                        <th>Անուն</th>
-                        <th>Մեքենա</th>
-                        <th>Կոնտակտ</th>
-                        <th>Երթուղի / նկարագրություն</th>
-                        <th>Տեղերի քանակ</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td><a href="https://www.facebook.com/vahan.hovsepyan">Վահան Հովսեփյան</a></td>
-                        <td>Mitsubishi Airtrek</td>
-                        <td>vahan.hovsepyan@gmail.com</td>
-                        <td>Imperium Plaza/Hotel National - Ամիրյան - Բաղրամյան - Մերգելյան ինստիտուտ. Ամեն օր` 18:05 - 18:15</td>
-                        <td>3</td>
-                    </tr>
-                    <tr>
-                        <td><a href="https://www.facebook.com/shovnanyan">Սյոմա Հովնանյան</a></td>
-                        <td>Lada 2108</td>
-                        <td>055586103 shovnanyan@gmail.com</td>
-                        <td>Սարյան, Դալմա, Լենինգրադյան, Սեբաստիա, Տիչինա` 09:10</td>
-                        <td>3</td>
-                    </tr>
-                    <tr>
-                        <td><a href="https://www.facebook.com/sergey.yakovlev.50">Sergey Yakovlev</a></td>
-                        <td>Mazda 6</td>
-                        <td>yakovlevsergey@yahoo.com</td>
-                        <td>Արտաշիսյան - Չեխով - Մանթաշյան - Գարեգին Նժդեհ - Արշակունյաց - Գ. Լուսավորիչ - Իտալիայի փ. - Հանրապետության հրապարակ - Արամի փ. - Տերյան (մինչև օպերա), 08:15-ից 8:45</td>
-                        <td>3-4</td>
-                    </tr>
-                    <tr>
-                        <td><a href="https://www.facebook.com/sergey.karapetyan.904">Սերգեյ Կարապետյան</a></td>
-                        <td>Toyota Sequoia</td>
-                        <td>093832091</td>
-                        <td>Հալաբյան(Թումո)-Կենտրոն(Մոսկովյան-Նալբանդյան)` 19։00</td>
-                        <td>7</td>
-                    </tr>
-                    <tr>
-                        <td><a href="https://www.facebook.com/hgeghamyan">Հայկ Գեղամյան</a></td>
-                        <td>VAZ 2115</td>
-                        <td>099893439</td>
-                        <td>Շինարարների սկիզբ - Հալաբյան - Կիևյան - Կոմիտաս (կամ Քոչար) - Լամբադա կամուեջ, բոլոր աշխատանքային օրերին, 10:10-ից 10:20-ի սահմաններում</td>
-                        <td>3-4</td>
-                    </tr>
-                    <tr>
-                        <td><a href="https://www.facebook.com/spartak.tadevosyan.1">Սպարտակ Թադևոսյան</a></td>
-                        <td>ՎԱԶ 2107</td>
-                        <td>099893439</td>
-                        <td>Առավոտյան 9:20 - 9:30, ՀԱԹ Բ2 Ֆլեշի մոտակայքից - ծովակալ Իսակովի պողոտա - 3րդ մաս - Մասիվ 7, 8, 9</td>
-                        <td>3</td>
-                    </tr>
-                </tbody>
-            </table>
+            <div class="row-fluid marketing">
+                <div class="span12">
+                    <table class="table table-bordered" id="drivers">
+                        <thead>
+                            <tr>
+                                <th>Անուն</th>
+                                <th>Մեքենա</th>
+                                <th>Կոնտակտ</th>
+                                <th>Երթուղի / նկարագրություն</th>
+                                <th>Տեղերի քանակ</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td><a href="https://www.facebook.com/vahan.hovsepyan">Վահան Հովսեփյան</a></td>
+                                <td>Mitsubishi Airtrek</td>
+                                <td><a href="mailto:vahan.hovsepyan@gmail.com">vahan.hovsepyan@gmail.com</a></td>
+                                <td>Imperium Plaza/Hotel National - Ամիրյան - Բաղրամյան - Մերգելյան ինստիտուտ. Ամեն օր` 18:05 - 18:15</td>
+                                <td>3</td>
+                            </tr>
+                            <tr>
+                                <td><a href="https://www.facebook.com/shovnanyan">Սյոմա Հովնանյան</a></td>
+                                <td>Lada 2108</td>
+                                <td>055586103 <a href="mailto:shovnanyan@gmail.com">shovnanyan@gmail.com</a></td>
+                                <td>Սարյան, Դալմա, Լենինգրադյան, Սեբաստիա, Տիչինա` 09:10</td>
+                                <td>3</td>
+                            </tr>
+                            <tr>
+                                <td><a href="https://www.facebook.com/sergey.yakovlev.50">Sergey Yakovlev</a></td>
+                                <td>Mazda 6</td>
+                                <td><a href="mailto:yakovlevsergey@yahoo.com">yakovlevsergey@yahoo.com</a></td>
+                                <td>Արտաշիսյան - Չեխով - Մանթաշյան - Գարեգին Նժդեհ - Արշակունյաց - Գ. Լուսավորիչ - Իտալիայի փ. - Հանրապետության հրապարակ - Արամի փ. - Տերյան (մինչև օպերա), 08:15-ից 8:45</td>
+                                <td>3-4</td>
+                            </tr>
+                            <tr>
+                                <td><a href="https://www.facebook.com/sergey.karapetyan.904">Սերգեյ Կարապետյան</a></td>
+                                <td>Toyota Sequoia</td>
+                                <td>093832091</td>
+                                <td>Հալաբյան(Թումո)-Կենտրոն(Մոսկովյան-Նալբանդյան)` 19։00</td>
+                                <td>7</td>
+                            </tr>
+                            <tr>
+                                <td><a href="https://www.facebook.com/hgeghamyan">Հայկ Գեղամյան</a></td>
+                                <td>VAZ 2115</td>
+                                <td>099893439</td>
+                                <td>Շինարարների սկիզբ - Հալաբյան - Կիևյան - Կոմիտաս (կամ Քոչար) - Լամբադա կամուրջ, բոլոր աշխատանքային օրերին, 10:10-ից 10:20-ի սահմաններում</td>
+                                <td>3-4</td>
+                            </tr>
+                            <tr>
+                                <td><a href="https://www.facebook.com/spartak.tadevosyan.1">Սպարտակ Թադևոսյան</a></td>
+                                <td>ՎԱԶ 2107</td>
+                                <td>099893439</td>
+                                <td>Առավոտյան 9:20 - 9:30, ՀԱԹ Բ2 Ֆլեշի մոտակայքից - ծովակալ Իսակովի պողոտա - 3րդ մաս - Մասիվ 7, 8, 9</td>
+                                <td>3</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+
+            <div class="footer">
+                <p>
+                    Ցանկում հայտվելու համար խնդրում ենք ուղարկել Ձեր ինֆորմացիան <a href="mailto:vhpoet@gmail.com">vhpoet@gmail.com</a> հասցեին:
+                </p>
+            </div>
+
+        </div> <!-- /container -->
+
+        <!-- Le javascript
+        ================================================== -->
+        <!-- Placed at the end of the document so the pages load faster -->
+        <script src="js/jquery.js"></script>
+        <script src="js/bootstrap-transition.js"></script>
+        <script src="js/bootstrap-alert.js"></script>
+        <script src="js/bootstrap-modal.js"></script>
+        <script src="js/bootstrap-dropdown.js"></script>
+        <script src="js/bootstrap-scrollspy.js"></script>
+        <script src="js/bootstrap-tab.js"></script>
+        <script src="js/bootstrap-tooltip.js"></script>
+        <script src="js/bootstrap-popover.js"></script>
+        <script src="js/bootstrap-button.js"></script>
+        <script src="js/bootstrap-collapse.js"></script>
+        <script src="js/bootstrap-carousel.js"></script>
+        <script src="js/bootstrap-typeahead.js"></script>
+        <script src="js/jquery-ui-1.10.3.custom.min.js"></script>
+        <script src="js/jquery.dataTables.min.js"></script>
+
+        <script>
+            
+            /* Table initialisation */
+            $(document).ready(function(){
+                
+                $('#drivers').dataTable({
+                    "bJQueryUI": true,
+                    "bPaginate": true,
+                    "bLengthChange": true,
+                    "bFilter": true,
+                    "bSort": true,
+                    "bInfo": false,
+                    "bAutoWidth": true,                    
+                    "sPaginationType": "full_numbers",
+                    "aLengthMenu": [
+                        [5, 10, -1], 
+                        [5, 10, "Ամբողջը"]
+                    ],
+                    "oLanguage": {
+                        "sLengthMenu": "Ցույց տալ _MENU_ հատ",
+                        "sZeroRecords": "Վարորդ չկա - այլ կերպ փորցիր",
+                        "sSearch": "Փնտրել`",
+                        "oPaginate": {
+                            "sFirst": "Սկիզբ",
+                            "sLast": "Վերջ",
+                            "sNext": "Առաջ",
+                            "sPrevious": "Հետ",
+                        }
+                    }                    
+                });
+            });            
+            
+            
+            (function(i, s, o, g, r, a, m) {
+                i['GoogleAnalyticsObject'] = r;
+                i[r] = i[r] || function() {
+                    (i[r].q = i[r].q || []).push(arguments)
+                }, i[r].l = 1 * new Date();
+                a = s.createElement(o),
+                        m = s.getElementsByTagName(o)[0];
+                a.async = 1;
+                a.src = g;
+                m.parentNode.insertBefore(a, m)
+            })(window, document, 'script', '//www.google-analytics.com/analytics.js', 'ga');
+
+            ga('create', 'UA-42629581-1', 'freecar.am');
+            ga('send', 'pageview');
+        </script>
+
+        <div id="window-resizer-tooltip" style="display: block;">
+            <a href="http://twitter.github.io/bootstrap/examples/marketing-narrow.html#" title="Edit settings" style="background-image: url(chrome-extension://kkelicaakdanhinjdeammmilcgefonfh/images/icon_19.png);"></a>
+            <span class="tooltipTitle">Window size: </span><span class="tooltipWidth" id="winWidth">1276</span> x <span class="tooltipHeight" id="winHeight">778</span><br><span class="tooltipTitle">Viewport size: </span>
+            <span class="tooltipWidth" id="vpWidth">1276</span> x <span class="tooltipHeight" id="vpHeight">639</span>
         </div>
-      </div>
-
-      <div class="footer">
-        <p>Ցանկում հայտվելու համար խնդրում ենք ուղարկել Ձեր ինֆորմացիան vhpoet@gmail.com հասցեին:</p>
-      </div>
-
-    </div> <!-- /container -->
-
-    <!-- Le javascript
-    ================================================== -->
-    <!-- Placed at the end of the document so the pages load faster -->
-    <script src="js/jquery.js"></script>
-    <script src="js/bootstrap-transition.js"></script>
-    <script src="js/bootstrap-alert.js"></script>
-    <script src="js/bootstrap-modal.js"></script>
-    <script src="js/bootstrap-dropdown.js"></script>
-    <script src="js/bootstrap-scrollspy.js"></script>
-    <script src="js/bootstrap-tab.js"></script>
-    <script src="js/bootstrap-tooltip.js"></script>
-    <script src="js/bootstrap-popover.js"></script>
-    <script src="js/bootstrap-button.js"></script>
-    <script src="js/bootstrap-collapse.js"></script>
-    <script src="js/bootstrap-carousel.js"></script>
-    <script src="js/bootstrap-typeahead.js"></script>
-
-    <script>
-        (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-            (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-                m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-        })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
-
-        ga('create', 'UA-42629581-1', 'freecar.am');
-        ga('send', 'pageview');
-    </script>
-
-<div id="window-resizer-tooltip" style="display: block;"><a href="http://twitter.github.io/bootstrap/examples/marketing-narrow.html#" title="Edit settings" style="background-image: url(chrome-extension://kkelicaakdanhinjdeammmilcgefonfh/images/icon_19.png);"></a><span class="tooltipTitle">Window size: </span><span class="tooltipWidth" id="winWidth">1276</span> x <span class="tooltipHeight" id="winHeight">778</span><br><span class="tooltipTitle">Viewport size: </span><span class="tooltipWidth" id="vpWidth">1276</span> x <span class="tooltipHeight" id="vpHeight">639</span></div></body></html>
+    </body>
+</html>
